@@ -26,3 +26,9 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+void print_arrow(int leftCol, int size)
+{
+  //practically speaking its a triangle on top of a square, right?
+  print_triangle(leftCol, size);
+  print_square(leftCol+(leftCol/2), size);
+}
